@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;taskboard-manager&gt;- Post Mortem</title>
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Post Mortem</h1>
+    </header>
+    <main>
+      <article id="overview">
+        <header>
+          <h2>Overview</h2>
+          <div class="subheader">This is a subpage of the <a href="index.html"><code>&lt;taskboard-manager&gt;</code> <span>custom element</a>'s showcase page.</div>
+        </header>
+        <p></p>
+      </article>
+      <article id="assertions">
+        <header>
+          <h2>Assertions</h2>
+        </header>
+        <section class="description">
+          <p>Assertions I made before the project started that would be answered when the project was done.</p>
+        </section>
+        <detail class="assertion">
+          <summary>
+            <span class="value">Web components are competent enough to use for building an entire web app.</span>
+            <span class="result">True</span>
+          </summary>
+          <div class="information">
+            <div class="assertion-description">
+              <header><h4>Assertion:</h4></header>
+              <p></p>
+            </div>
+            <div class="result-description">
+              <header><h4>Result:</h4></header>
+              <p></p>
+            </div>
+          </div>
+        </detail>
+        <detail class="assertion">
+          <summary>
+            <span class="value">The DOM is fast enough to not require caching elements at runtime.</span>
+            <span class="result">True</span>
+          </summary>
+          <div class="information">
+            <div class="assertion-description">
+              <header><h4>Assertion:</h4></header>
+              <p></p>
+            </div>
+            <div class="result-description">
+              <header><h4>Result:</h4></header>
+              <p></p>
+            </div>
+          </div>
+        </detail>
+        <detail class="assertion">
+          <summary>
+            <span class="value">Elements in the shadowDOM should defer to parts, rather than id or class attributes.</span>
+            <span class="result">False</span>
+          </summary>
+          <div class="information">
+            <div class="assertion-description">
+              <header><h4>Assertion:</h4></header>
+              <p></p>
+            </div>
+            <div class="result-description">
+              <header><h4>Result:</h4></header>
+              <p>part queries are harder because they have to be attribute matches which would mean also requiring the wildcard selector</p>
+            </div>
+          </div>
+        </detail>
+        <detail class="assertion">
+          <summary>
+            <span class="value">Use attributes for properties, use custom elements for collections.</span>
+            <span class="result">True</span>
+          </summary>
+          <div class="information">
+            <div class="assertion-description">
+              <header><h4>Assertion:</h4></header>
+              <p></p>
+            </div>
+            <div class="result-description">
+              <header><h4>Result:</h4></header>
+              <p>mostly works except with weird stuff like file/blob-type values for input elements. Also need to watch out for situations where plain child content would be better than an attribute. Task-card description should just use its own textcontent, instead of a description attribute, for example.</p>
+            </div>
+          </div>
+        </detail>
+        <detail class="assertion">
+          <summary>
+            <span class="value">Keep all of the business logic in the top element and pass content into child and grandchild custom elements by nesting slot elements.</span>
+            <span class="result">False</span>
+          </summary>
+          <div class="information">
+            <div class="assertion-description">
+              <header><h4>Assertion:</h4></header>
+              <p></p>
+            </div>
+            <div class="result-description">
+              <header><h4>Result:</h4></header>
+              <p>top object becomes massive; manages too much data. Following which shadowRoot owns the elements becomes complicated. Every custom element has to compensate for a nested "slot" element, which makes things like direct child queries not work.</p>
+            </div>
+          </div>
+        </detail>
+        <detail class="assertion">
+          <summary>
+            <span class="value"></span>
+            <span class="result">False</span>
+          </summary>
+          <div class="information">
+            <div class="assertion-description">
+              <header><h4>Assertion:</h4></header>
+              <p></p>
+            </div>
+            <div class="result-description">
+              <header><h4>Result:</h4></header>
+              <p></p>
+            </div>
+          </div>
+        </detail>
+      </article>
+    </main>
+    <footer>
+      <div class="credit">
+        <ul>
+          <li><a target="_blank" href="https://uchu.style">uchu.css colors</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

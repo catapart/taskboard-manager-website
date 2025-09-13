@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;taskboard-manager&gt;- Custom Element Notes</title>
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Notes on developing custom elements</h1>
+    </header>
+    <main>
+      <article id="overview">
+        <header>
+          <h2>Intro</h2>
+          <div class="subheader">This is a subpage of the <a href="index.html"><code>&lt;taskboard-manager&gt;</code> <span>custom element</a>'s showcase page.</div>
+        </header>
+        <p>This page is a collection of notes about the development of custom elements for browsers. It is intended to be a guide for best practices, rather than a set of rules to follow.</p>
+        <p>Many of the conclusions drawn here may be naive or impractical for a lot of use cases. This page is mainly a reference.</p>
+      </article>
+      <article id="basics">
+        <h2>Basics and Scaffolding</h2>
+        <section>
+          <ul>
+            <li>when to make one</li>
+            <li>main focus: trying to represent object/state in dom</li>
+            <li>how to make one</li>
+            <li>shadow dom</li>
+          </ul>
+        </section>
+        <section id="faq">
+          <ul>
+            <li>How do I get data into the element from a parent?</li>
+            <li>How do I get data out of an element from a parent?</li>
+            <li>How do I get data from a parent, as a child?</li>
+          </ul>
+        </section>
+      </article>
+      <article id="attributes">
+        <h2>Attributes</h2>
+        <section>
+          <ul>
+            <li>if property and atomic, make attribute</li>
+            <li>parsing</li>
+            <li>observedAttributes</li>
+            <li>attributeChanged</li>
+          </ul>
+        </section>
+      </article>
+      <article id="children">
+        <h2>Children and Slots</h2>
+        <section>
+          <ul>
+            <li>if collection, make child</li>
+            <li>if object, make element (custom, if needed)</li>
+            <li></li>
+          </ul>
+        </section>
+      </article>
+      <article id="events">
+        <h2>Events</h2>
+        <section>
+          <ul>
+            <li>minimizing handlers</li>
+            <li>composedPath for click events</li>
+            <li>when to dispatch</li>
+            <li>listening</li>
+            <li>dispatching</li>
+            <li>bubbling</li>
+            <li>cancelling</li>
+          </ul>
+        </section>
+      </article>
+      <article id="parts">
+        <h2>Parts and Styling</h2>
+        <section>
+          <ul>
+            <li>use ids and classes</li>
+            <li>copy all ids and classes to part attribute</li>
+            <li>if collection or package, also copy tags to part attribute</li>
+            <li>if nested, use exportparts</li>
+          </ul>
+        </section>
+      </article>
+      <article id="nesting">
+        <h2>Nesting Custom Elements</h2>
+        <section>
+        
+        </section>
+      </article>
+      <article id="categories">
+        <h2>Categories</h2>
+        <section>
+          <ul>
+            <li>Package - apps, collection browser, etc</li>
+            <li>Container - pages, panels; well-known to parents, established api</li>
+            <li>Component - inputs, select list, thumbnail, etc.</li>
+          </ul>
+        </section>
+      </article>
+      <article id="form-features">
+        <h2>Form Integration</h2>
+        <section>
+        
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="credit">
+        <ul>
+          <li><a target="_blank" href="https://uchu.style">uchu.css colors</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

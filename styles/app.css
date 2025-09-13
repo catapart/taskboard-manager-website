@@ -1,0 +1,85 @@
+@import url(uchu.css);
+
+*
+{
+    box-sizing: border-box;
+}
+html
+{
+    color-scheme: light dark;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    background-color: var(--surface);
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-surface);
+}
+@media (prefers-color-scheme: light) 
+{
+    body
+    {
+        --accent-color: var(--uchu-blue-4);
+
+        --surface: var(--yang);
+        --surface-panel: var(--uchu-yin-9);
+
+        --text-surface: var(--uchu-gray-4);
+    }
+}
+@media (prefers-color-scheme: dark) 
+{
+    body
+    {
+        --accent-color: var(--uchu-blue-4);
+
+        --surface: var(--yin);
+        --surface-panel: var(--uchu-yin-9);
+
+        --text-surface: var(--uchu-gray-4);
+    }
+}
+
+h2,h3,h4,h5,h6
+{
+    margin-block: .75em;
+}
+p,li,dd,dt
+{
+    max-width: 80ch;
+}
+dl
+{
+    margin-left: 20px;
+}
+dt
+{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+code
+{
+    background-color:lightcyan;
+    color:darkcyan;
+    display: inline-block;
+    padding: 1px 3px;
+    border-radius: 2px;
+    border: solid 1px;
+}
+
+article
+{
+    background-color: var(--surface-panel);
+}

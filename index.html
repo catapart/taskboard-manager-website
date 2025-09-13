@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The &lt;taskboard-manager&gt; Custom Element</title>
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+  <body class="centered-single-column">
+    <header class="full-width">
+      <div class="centered-single-column">
+        <div class="background-container">
+          <div class="background"></div>
+        </div>
+        <div class="stack">
+          <browser-mockup><taskboard-manager id="header-manager"></taskboard-manager></browser-mockup>
+          <div class="overlay">
+            <code>&lt;taskboard-manager&gt;</code>
+            <div class="description">
+              A free, open-source, CC0-licensed, custom element, PWA for simple, local, task management.
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article id="overview">
+        <header>
+          <h2>The <code>&lt;taskboard-manager&gt;</code> <span>custom element</span></h2>
+        </header>
+        <div id="welcome-card" class="card">
+          <figure id="welcome-figure" class="photo backdrop">
+            <img src="" alt="taskboard manager screenshot" title="taskboard manager screenshot" id="welcome-image" class="photo">
+          </figure>
+          <section id="overview-welcome">
+            <header>Ready to Plan?</header>
+            <p>Get started with free, local task management in the app!</p>
+            <button class="accent-button" type="button">Open the app</button>
+          </section>
+          <div class="extra">
+            <span class="documentation">Need help? See the full <a href="">App Documentation</a>!</span>
+          </div>
+        </div>
+        <section class="links">
+          <div class="overview-link">
+            <header>
+              <span class="flourish">
+                <span class="item one">
+                  <span class="icon"></span>
+                </span>
+                <span class="item two"></span>
+                <span class="item three"></span>
+              </span>
+              <div class="title">About</div>
+            </header>
+            <span class="description">Looking for a place to start? See the About section for a basic overview of the app, the custom element, and this website.</span>
+            <a href="" class="accent-button outline">Find out more</a>
+          </div>
+          <!-- <a href="" class="overview-link documentation">
+            <header>
+              <span class="flourish">
+                <span class="item one">
+                  <span class="icon"></span>
+                </span>
+                <span class="item two"></span>
+                <span class="item three"></span>
+              </span>
+              <div class="title">Documentation</div>
+            </header>
+            <span class="description">Learn more about how to use the app, or find out all about how to implement the app in your own project, using the documentation!</span>
+            <button type="button">View Docs</button>
+          </a> -->
+          <div class="overview-link">
+            <header>
+              <span class="flourish">
+                <span class="item one">
+                  <span class="icon"></span>
+                </span>
+                <span class="item two"></span>
+                <span class="item three"></span>
+              </span>
+              <div class="title">Custom Elements</div>
+            </header>
+            <span class="description">Are you a developer? Check out the open source custom elements that were used to make this app!</span>
+            <a href="" class="accent-button outline">Browse custom elements</a>
+          </div>
+          <!-- <a href="" class="overview-link">
+            <header>
+              <span class="flourish">
+                <span class="item one">
+                  <span class="icon"></span>
+                </span>
+                <span class="item two"></span>
+                <span class="item three"></span>
+              </span>
+              <div class="title">Explain</div>
+            </header>
+            <span class="description">Curious about why this app is a custom element? Or a PWA? Or uses IndexedDB? Find out about the intentions of the app.</span>
+            <button type="button">Learn more</button>
+          </a> -->
+          <div class="overview-link">
+            <header>
+              <span class="flourish">
+                <span class="item one">
+                  <span class="icon"></span>
+                </span>
+                <span class="item two"></span>
+                <span class="item three"></span>
+              </span>
+              <div class="title">Design</div>
+            </header>
+            <span class="description">Learn more about the design of the app, including its benefits and compromises.</span>
+            <a href="" class="accent-button outline">Read more</a>
+          </div>
+          <!-- <a href="" class="overview-link">
+            <header>
+              <span class="flourish">
+                <span class="item one">
+                  <span class="icon"></span>
+                </span>
+                <span class="item two"></span>
+                <span class="item three"></span>
+              </span>
+              <div class="title">Performance</div>
+            </header>
+            <span class="description">See how this app, and the custom elements that make it up, have performed in various browser tests.</span>
+            <button type="button">See performance stats</button>
+          </a> -->
+        </section>
+      </article>
+      <div id="about">
+        <h2 id="about-heading">
+          <span class="title">About</span>
+        </h2>
+        <section class="simple">
+          <div class="content">
+            <h3 class="about-section-heading">Keep it simple</h3>
+            <div class="description">
+              <p>The <code>&lt;taskboard-manager&gt;</code> <span>custom element is an app that provides a way to track tasks in a similar way to <a href="">Kanban boards</a>.</p>
+              <p>It's free to use, it's private, and it works in desktop and mobile screen sizes, in both light and dark modes.</p>
+              <p><a href="">Use the app</a> to manage projects, keep up with reminders, shop for groceries, and more! No login or internet connection required.</p>
+            </div>
+          </div>
+          <figure id="about-simple-figure" class="photo">
+            <img src="" alt="taskboard manager screenshot" title="taskboard manager screenshot" id="about-simple-image" class="photo">
+          </figure>
+        </section>
+        <section class="back">
+          <h3>Back up</h3>
+          <p>Not sure what a custom element even is? That's okay! It's just a specific kind of package for developers to use. You don't need to know anything about it, in order to use the task manager app.</p>
+          <p>Unfamiliar with "Kanban" or task management? No worries! You can think of the app as a complicated "To Do" list editor. You can create lists of tasks and then indicate when those tasks have been completed.</p>
+          <p>That should give you a general idea of what you could or couldn't use the app for. For a little more background, though...</p>
+          <h4>Custom Elements</h4>
+          <p>A custom element is a special type of javascript class that can be represented in the HTML programing language as markup. That's a fancy way of saying that if you have a <code>.html</code> file, you can write <code>&lt;taskboard-manager&gt;&lt;/taskboard-manager&gt;</code> in it, and that will make the entire app appear in your webpage. There are caveats to that - like having to include the javascript that drives the app - but it's pretty much that easy.</p>
+          <p>In fact, if you right-click (or long press) on this page and choose the option to "View Page Source", you can see that the element is in the header of this page (which is how that header is interactive). </p>
+          <p>If you are a developer, you may have heard of custom elements by the psuedonym "Web Components". That's mostly how I have heard them talked about. But it's not in any spec that I've seen, so I hesitate to use it in documentation. It seems to mostly be a way to demystify the concept for people familiar with javascript frameworks. Custom Elements are to javascript as Components are to React, for example. So that's fine, by me!</p>
+          <p>In that sense, the <code>&lt;taskboard-manager&gt;</code> is a web component. And it's actually made up of web components! You can find out more in the Custom Elements section.</p>
+          <h4>"Kanban" style boards</h4>
+          <p>A "kanban" board is a collection of lists that each contain tasks. The board manages everything together so that tasks from one list can be moved to other lists.</p>
+          <p>These boards, and their lists can be used to keep track of all kinds of things, from grocery lists to project management. The ability to assign tasks to any list on the board allows you to create "lanes" that can describe where a task is on its way to being "done". That creates a unique flexibility for task-tracking.</p>
+          <p>It may be hard to imagine why you might "need" multiple lanes for a grocery list, but you may not! Since each task has its own checkbox, you can use a single list as a grocery list and never worry about moving tasks around.</p>
+          <p>On the other hand, if you are planning a trip, you might need to make many lists for a single trip. One list for what to pack, another for food, another for travel and lodging, etc. It's nice to be able to keep all of them together on a single board.</p>
+          <p>Where the board shines, though, is in project management. Each board is initialized with lanes that correspond to typical (if simplified) project management task tracking. Instead of just tracking what tasks need to be done, you can easily track how far along a task is in being done. This type of modularity and granularity in a project can sharpen focus and keep the project moving at a fast pace!</p>
+          <p>If you would like some ideas for getting started, check out the <a>board templates</a> section.</p>
+          <p><em>(I keep putting "kanban" in quotes because I think it's a formal concept which has a lot more to it than just "fancy to-do lists", and I don't want to imply I'm actually representing what kanban boards are. For more information about acutal kanban, check out <a href="https://en.wikipedia.org/wiki/Kanban_board">the wikipedia article</a>!)</em></p>
+        </section>
+        <section class="note">
+          <h3>Take note</h3>
+          <p>If you are really interested in using the app for task management, there are a few things to be aware of. Firstly, the data is stored in a place on your computer that may get deleted. If you are going to use the app, please make sure to export your content frequently. Files that are exported from the app are saved to your device and will not be deleted automatically.</p>
+          <p>Next, if you would like to use the app offline, without needing to connect to the internet, you will need to install it. Follow this guide to install the app onto your device (desktop, laptop, or mobile). Once you've installed the app, you can always use the app - even without an internet connection!</p>
+          <p>Also, the data is local to your device. That means that - unlike other web apps - you will not share data between your phone and your desktop computer. This is because - unlike other web apps - this website's servers do not store you data. Your device stores your data. So the only way to get it from one device to another is by using the export and import process.</p>
+          <p>Another thing to know is that the website does not guarantee uptime at all. If you are using the app without installing it by visiting the website, then you are risking being locked out of the app if the site goes down. It's not my intention to let the site go down, but things happen and - in my experience - they tend to happen at the worst possible times. More than anything, this site is a showcase and a reference for development of web apps using these technologies. So please do not rely on it to provide access to your data. Again, you can install the app to always have access to it. And even without the app, there are ways to retrieve the data stored in it, so you aren't at risk of losing your data if the site goes down. This is mainly just a disclaimer for possible outages.</p>
+        </section>
+        <section class="more">
+          <h3>Tell me more</h3>
+          <p>The header makes a lot of claims so let's break them down:</p>
+          <dl>
+            <dt>Free</dt>
+            <dt>Open Source</dt>
+            <dt>Creative Commons 0 (zero) Licensed</dt>
+            <dt>Progressive Web App (PWA)</dt>
+          </dl>
+          <p>In addition to those claims, there are a few other things to highlight about the <code>&lt;taskboard-manager&gt;</code> <span>custom element:</p>
+          <dl>
+            <dt>Local-First <em>(but local-only)</em></dt>
+            <dt>Available on NPM</dt>
+            <dt>"Dependency Free"</dt>
+            <dt>Single File</dt>
+            <dt>(Relatively) Small</dt>
+          </dl>
+
+          <p>Aside from those qualities, the element is also theme-able, and the DemBoards implementation on this website provides multiple themes.</p>
+        </section>
+      </div>
+      <div id="resources">
+        <div id="documentation" class="resource">
+          <h2>Documentation</h2>
+          <p>This project has been fully documented along with examples and tutorials! Check out the docs for the details!</p>
+          <section>
+            <li>quick start gif</li>
+            <li>quick start video</li>
+            <li>brief description</li>
+            <li>docs link</li>
+          </section>
+        </div>
+        <div id="icons-templates" class="resource">
+          <h2>Icons and Templates</h2>
+          <section>
+            <h3>Icons</h3>
+            <p>Since some of the custom elements use icons, and the elements were intended to be released in the public domain, I needed a set of icons that were also in the public domain. Rather than find a set, I decided to make my own, as I needed them.</p>
+            <p>While the set is not very comprehensive, it is nonetheless completely free for anyone to use! They were each designed and developed by hand in Inkscape, with an intention of using them in these custom elements. That means that each one biases toward simple shapes and readability at small scales. They are also all optimized for size, since the intention was to inject each one into HTML. So there are no groups with odd translations, or unused app ids, or whatever other junk is often injected into SVG content. In fact, if you are familiar with HTML, you can open the icons in a text editor and probably be able to understand what each element is used for.</p>
+          </section>
+          <section>
+            <h3>Templates</h3>
+          </section>
+        </div>
+        <div id="custom-elements" class="resource">
+          <h2>Custom Elements</h2>
+          <section>
+            <p>The <code>&lt;taskboard-manager&gt;</code> is a custom element itself, but it is also made up of several other custom elements. Each of those elements are open source and in the public domain, so they can be used in development projects by anyone.</p>
+            <p>The elements are listed here with a brief description, but you can also check out the custom element playground to see all of the elements in use.</p>  
+          </section>
+          <section class="items">
+            <div class="item">
+              <h4><code>&lt;captioned-thumbnail&gt;</code></h4>
+              <div class="description"></div>
+              <a href="" class="repo-link"></a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- <article id="explain">
+        <h2>Explain</h2>
+        <p>"Why" is a great question! It's not usually the most <em>important</em> question, but it's often the most interesting!</p>
+        <p>It does tend to be a pretty open question, though, and that can make it complicated. Not because any one answer is complicated; rather that the answer given may be the answer to a different "why".</p>
+        <p>Here you can find some of the answers to some of the whys that I have found most compelling.</p>
+        <section>
+          <h3>Why Make it?</h3>
+          <div>
+            <h4>Personal Development</h4>
+            <p>By far, the main point of developing this project was to develop all of the components that make it up so that I could use them in other projects. The actual app, itself, is a proof that all of the components work, and work as expected. But the components are the reason the app exists.</p>
+            <p>The problem I had in making custom elements that could be reused across other projects was that I didn't really have a good gauge of when a custom element was good enough for deployment. And, when I started, I also didn't know a lot of the details about how someone could make the components modular in a way that they could still be themed easily. Or how to publish modules to a package manager so that they could be used by the other modules and the app.</p>
+            <p>So my solution was to make an app. Because an app, unlike a library, can have clear boundaries and requirements. A library may need to support all kinds of stuff! But an app just needs to do the things it does. For me, that kind of change in perspective can make what I <em>need</em> clearer to myself.</p>
+            <p>Once I had the app design figured out, I also knew where I could stop iterating on my libraries. At that point, I could call them all <code>1.0.0</code> because, at the very least, they were able to be used successfully in one deployed application.</p>
+            <p>Knowing what I wanted to make and knowing how to make it as a tightly-coupled, single-file, hard-coded, monstrosity gave me a pretty clear set of goals that all revolved around translating it from a poorly-made app into a less poorly-made one. What was also clear was that a majority of the work on this project was going to be me learning how to modularize and publish and do all of the things it takes to manage a real development project. And even if I were able to do all of that and learn or retain absolutely nothing, at least I would get some useful custom elements!</p>
+          </div>
+          <div>
+            <h4>Personal Use</h4>
+            <p>I'll admit that I do not use the app very extensively. It is a limited application, and the current deployments are really focused on providing examples and reference instead of making an outstanding consumer product.</p>
+            <p>That said, I do use the app! My biggest complaint is that there is no mechanism for sharing data between devices. I'd <em>really</em> like to be able to open apps on my desktop, laptop, tablet, and mobile, and have them all use the same data. But that's a whole can of worms called "account management" that is entirely out of scope for this project.</p>
+            <p>Aside from that, though, I find the app perfectly competent for my daily project management. And that was definitely a goal of the project: to give myself a method of tracking information in a taskboard, without having to log in or load a website.</p>
+          </div>
+          <div>
+            <h4>Reference</h4>
+            <p>A big part of this project is all of the supplemental content that goes with it, including this website. The intention was to give myself a reference so that I wouldn't have to remember all of the lessons learned while developing it. Nor would I have to remember every one of the components that I created and what they all did.</p>
+            <p>Having this website, along with the documentation, developer notes, and post mortem, allows me to revist this project in a tangible way, rather than just having to remember things. That's helpful to me when I'm working on new projects. Especially when starting out, I may try to re-develop something I already have a solution for. So having a place where I can see a lot of pre-existing options is something I really benefit from.</p>
+            <p>Personally, though, if I just have a list of components without any context for why they were built or what they were used for, I have a harder time getting a feel for when they should and should not be used. That's not a huge problem, but I figured that if I had an application that did all of the things that most apps need to do, composed of components that make that possible, that would probably be a really useful resource.</p>
+          </div>
+          <div>
+            <h4>Comparison</h4>
+            <p>Even though this project helped me figure out how to do a lot of things, and how to avoid doing a lot of things that ought not be done, it also gives me a much easier way to compare my custom solutions to other solutions that exist for solving the same problems.</p>
+            <p>For example, I used completely custom libraries for data management, which do not have any built-in way to sync that data with a server. While server-sync should be a fairly trivial add, it's simply not represented in this project at all.</p>
+            <p>But if you've ever tried looking at what is being offered by local-first, server-syncing libraries, you might find yourself confused as to what exactly they are offering. And, even worse, you might find that you can't line up the type of data that you are trying to save with the type of data structures the library would need to function.</p>
+            <p>That kind of stuff is really common with development projects - you want to start on something, but you're not sure where you might be making missteps and you can't really figure out how you can bolt on something that looks like a solution. So you're left with a lot of research to do.</p>
+            <p>In some sense, this project can be thought of as that research. Now that I've built an app that could use those libraries, I have a much deeper knowledge of what I would need in a local-first, server-syncing library. Not just for this project, but for all projects.</p>
+            <p>That kind of insight makes comparing different libraries and their functionalities easier. By going through the process of solving the same problems they have already solved, I can see the value they are adding (or, let's be honest, not adding in a lot of cases), which makes determing whether those libraries are worth the install pretty straightforward.</p>
+          </div>
+          <div>
+            <h4>Discovery</h4>
+            <p>One of the things that I've never been quite clear on is how reasonable the suggestions of web standards committees (or whomever else) actually are. I've long been a fan of css properties ("variables"), and I think if used correctly CSS, itself, is a pretty elegant solution.</p>
+            <p>That said, you lose a lot of the benefit of something like cascades, when you start factoring in the shadow dom. And then, when you start looking at solutions, you end up with a ton of spec and not a lot of practical application.</p>
+            <p>Which is just to say that while web frameworks often have lots of examples and other devs who are trying to solve the same problems as you are, there aren't as many resources on the nitty-gritty intricacies of custom-element development, as it pertains to full application development, instead of just simple components.</p>
+            <p>So when I'm looking at all of the best practices and getting information like "use the part and exportparts attributes", or "technically, putting a slot in a nested element can pass the parent children to the nested element", I have a hard time knowing whether my specific functionality can be accomplished without seeing at least SOME of it in practical application.</p>
+            <p>Through this project, I implemented those practices. Now I, and everyone else, can judge for ourselves!</p>
+          </div>
+          <div>
+            <h4>Benchmarking</h4>
+            <p>I would certainly never pretend like this app is a watermark to be compared against, but I do have some hope that it might be a... let's say "easy" target to prove you are better than?</p>
+            <p>What I mean is that there are a lot of frameworks out there, like Svelte and Lit and React, and each of them claim to give you some benefit over just using standard custom elements. In many cases, the biggest benefit they offer is "reactive"-style programming, but they each tend to insist that their performance or their modularity, or even just their ease of use is better than writing without their frameworks.</p>
+            <p>I don't intend to dispute any of that and, in fact, I'm convinced that any specific library could probably remake this app - as "novice" as possible - and come out with something more performant or more digestible, or whatever else. I would genuinely love to see other frameworks tackle this app!</p>
+            <p>To that end, I think this sets a "baseline" or maybe even "below standard" example that other versions of the app could be compared against. Like, say, if you re-made this exact app in React, you could point to all of the ways it performs better and gives you more features, in a really tangible way. You could drop them side by side on a page and say "vanilla" vs "react", and people could check the code samples to see what they're getting out of your framework.</p>
+            <p>And of course, that's the real goal: other frameworks. When someone comes along with a framework and says "this makes apps better than what is out there", it would be really nice of them to be able to say "here, check out our version of a taskboard manager", instead of a "todo" app, for example. That way, we could see very clearly how this library is going to handle complex relationships and everything else needed for this more complicated (than a todo app) application.</p>
+            <p>To be honest, I realize that's kind of a pipe dream. But I can't say it wasn't a hope of mine as I developed this!</p>
+          </div>
+          <div>
+            <h4>Other Projects</h4>
+            <p>Overall, this project, like any project, had many reasons that contributed to its start, and many more that contributed to why the decisions in it were made as they were.</p>
+            <p>If there was one reason that had more importance than any of the others, though - one reason that could be said was the "whole" reason for the project - it would be this: I made this project, so that I can make other projects.</p>
+            <p>It's probably no surprise to learn that I want to build other applications. Some paid, some free to use, but all of them needing some very similar building blocks! Things like a path-router or a collection-browser are useful for all kinds of applications. Elements like selectable-list are so simple and useful that I'm kind of surprised they don't already exist in the HTML spec.</p>
+            <p>So as I move on from this work and on to other things, I've learned not only how to make modular, composeable, shareable applications, but I also did a LOT of the grunt work for any new project I want to start!</p>
+          </div>
+          <div>
+            <h4>Why</h4>
+            <p>When all is said and done, the biggest reason why I made this is because I have so many things to do, and so little time to do them. And I'm desperately hoping this work helps speed things along in the future because I am so excited to share all the things I'm working on!</p>
+          </div>
+        </section>
+        <section>
+          <h3>Why use Custom Elements?</h3>
+          <p>Custom elements may seem like a controversial choice for development, when there are so many great javascript libraries and frameworks out there. From something as fully-featured as <a href="https://react.dev/">React</a> or <a href="https://angular.dev/">Angular</a>, all the way to light wrappers around custom elements like <a href="https://lit.dev/">Lit</a>, and alongside other stuff altogether, like <a href="https://htmx.org/">htmx</a> or <a href="https://shoelace.style/">shoelace</a>. There are a lot of things to help with custom element development, so it makes sense to question why I would re-invent the wheel.</p>
+          <p>And the simple answer is that custom elements work for what I was doing. Nothing was so complicated that I needed a heavy library, or a light wrapper, or any kind of intermediate interface at all. I used custom elements because part of what I wanted to see was how feasible it was to build an entire app using custom elements. Turns out, it was pretty feasible with vanilla custom elements!</p>
+          <p>Of course, not having to use a framework to make the component meant that I could leave out dependencies, which meant that the published code would (likely) be smaller. While that wasn't a specific goal, in and of itself, it's nice! The specific goal, though, was to be able to license these elements in the public domain, which gets a little bit tricky when you're dealing with non-public-domain licenses, like most dependency libraries would have. In the end, it was just easier to not have any third-party dependencies that I could avoid.</p>
+          <p>Another benefit to not having dependencies, though, is not having to externalize those dependencies for downstream development. Said more simply: if I had used React, the only people who could use it would be people that knew React or would learn about React. Because you have to know React (and JSX, really) to work with React components. And the same would be true of any dependency I chose. Almost every library that I came across that purported to "help" me with web component development also wanted to make me develop components in a specific way that their library understood. In some cases, that even meant exposing object types and other code that I wouldn't need without the library.</p>
+          <p>That's not a bad thing, on its own! And, naturally, the same thing is true of custom elements: anyone who wants to use them has to learn the ins and outs of custom element development. If anything's rarer between React devs and custom element devs, it's the latter, so why optimize for that demographic?</p>
+          <p>In practice, the oddities and specifics that you have to learn about custom elements are both fewer than the amount you take on with dependency libraries, and more universal than any of those. Obviously, what is learned for custom elements has wider application than in any one library. A lot of times, knowing how custom elements work informs how a library is having to work around an issue. So I honestly feel like if I have to make people learn anything to work with my library, it should be the stuff that is native to the platform.</p>
+          <p>Summing that up: avoiding dependencies makes it easier to publish. For the reason I chose custom elements rather than building some other kind of library was because they are a great solution for any type of functionality or data that needs to be visualized in the DOM. There were a lot of times when I debated whether some piece of functionality needed to be encapsulated into its own module and a great way to tell if that module should be a custom element was whether or not it needed to be represented in the DOM.</p>
+          <p>For some things, I was suprised to learn that I didn't really need a representation in the DOM and, therefore, didn't really need that module to be a custom element. An example would be the <code>task-board</code> element which - once I had removed all of its unecessary event handlers, was really left as a container element (that I value for its contextual clarity, rather than its functionality). But in other cases, like the <code>action-history</code> element, I was suprised to learn just the opposite - that an undo/redo feature benefits from a visual representation!</p>
+          <p>So I chose to use the feature that is well supported, works for my use case, prevents dependencies, eases publishing, and taught me a trick or two about modular code. Honestly, it's harder to answer why I wouldn't have used them!</p>
+        </section>
+        <section>
+          <h3>Why make it a Progressive Web App?</h3>
+        </section>
+        <section>
+          <h3>Why make a Taskboard Manager?</h3>
+          <p>The type of app was chosen because a reasonable version of it would include a lot of features that are useful in almost every other app.</p>
+          <p>Basic TODO apps tend to lack complexity which makes them easy to demonstrate and reason about, but leaves a lot up to a learning dev as far as figuring out how to graduate from storing a single data type into storing complex relationships and special-case data types like images/media.</p>
+          <p>On the other hand, a lot of apps require a lot of functionality for specialized features of that app. For example, a "simple" music app would require a lot of development around audio features which are not applicable outside of audio-centric apps.</p>
+          <p>A taskboard manager does not really have any specialized features. Almost anything developed for an app like this would be useful to any other app built in this way. And yet, it is complex enough to benefit from modularity and provide many different ways to proces data.</p>
+          <p>So the general reason was that it fit well as a "demo project". For more information, see the specific elaborations below.</p>
+          <ul>
+            <li>
+              <span class="title">Useful as Local-First (local-only)</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Clear Data Structure</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Data Storage</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Image Data</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Parent-Child Relationships</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Sibling Relationship</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Drag and Drop</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">State Management</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Shortcut Keys</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Undo</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Configuration</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Theming</span>
+              <span class="value"></span>
+            </li>
+            <li>
+              <span class="title">Nesting Components</span>
+              <span class="value"></span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Why use IndexedDB?</h3>
+        </section>
+        <section>
+          <h3>Why did you put all of this on the website?</h3>
+          <p>I often forget important things or information that might make things easier to understand. To help with this, I make a place for as many categories of content that I can think about, and then I just start writing and any time I am reminded of something I want to expand on, I dump it into the designated category for that thing (or rearrange the categories to account for the new thing). It's pretty chaotic, but I've found that it extracts information out of me that I would otherwise have to wait for someone to ask about.</p>
+          <p>The downside of that is that I ramble. Every dumb thought that tumbles out of my head is committed to storage somewhere. I edit it down later, but you're looking at the result, so if you're seeing something and thinking "why would you have described that?", I probably missed some content that could use some clipping. Sorry about that!</p>
+        </section>
+      </article> -->
+      <article id="design">
+        <h2>Design</h2>
+        <section>
+          <h3>Familiar</h3>
+          <p>One of the goals of the <code>&lt;taskboard-manager&gt;</code> and all of the custom elements that make it up was to mimic the developer experience for standard HTML elements.</p>
+          <p>In the same way that you might still need to look up the exact api for a "file"-type <code>&lt;input&gt;</code>, or how to utilize a <code>&lt;datalist&gt;</code>, or whatever, you will still need to refer to documentation to use these elements.</p>
+          <p>That aside, if you are familiar with web technologies, most of what these custom elements do and expect should be familiar to you. For example, events are dispatched and bubble from <code>&lt;task-card&gt;</code> right on up through each parent element in the same way that <code>"click"</code> events do.</p>
+          <p>Other examples would be that the <code>&lt;editable-list&gt;</code> element implements the same margins and padding that <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> elements do, or that all of the elements defer to dispatching <code>change</code> events, when it is appropriate, to match that functionality from input elements.</p>
+          <p>In addition to feeling familiar, the custom elements also rely on standard HTML capabilties wherever possible. This includes buttons and links for accessibility where applicable, as well as leveraging css and inputs in place of javascript when possible.</p>
+          <p>Where custom solutions had to be used, these custom elements have tried to implement common-sense features. This includes things like css variables for border colors, or slots specifically to replace icons.</p>
+        </section>
+        <section>
+          <h3>Parts and Styling</h3>
+          <p>part attributes</p>
+          <p>icons and variables</p>
+          <p>avoid the shadow dom</p>
+          <p>light and dark modes</p>
+        </section>
+        <section>
+          <h3>Data</h3>
+          <p>why indexedDB</p>
+          <p>why no syncing?</p>
+          <p>record-style storage</p>
+          <p>export format</p>
+        </section>
+      </article>
+      <div id="performance">
+        <h2>Performance</h2>
+        <section>
+        
+        </section>
+      </div>
+      <article id="questions">
+        <h2>Questions and Answers</h2>
+        <section>
+          <ul>
+            <li>do you consider this an mvp?
+              no. this is a very polished "proof of concept". POCs show all of the functionality (records, messaging, feedback, api, etc), but still may lack featuers. MVPs have a minimum set of features and this app has not reached that benchmark.
+              no syncing, no user assignment, no tags, no
+              mvp was builds (see here), but many features did not make it to poc
+            </li>
+            <li>why no online syncing?</li>
+            <li>- recurring costs</li>
+            <li>why no frameworks</li>
+            <li>why don't you call them web components?
+                because I think of custom elements as different things, and components is only one of those things. custom elements can sometimes be components, but can be a lot of other things, too.
+                apps - collection of compositions
+                composition - collection of components to implement functionality. usually referred to as panel. (compositions are subsets of panels. compositions must have views, and panels are just views of components. panels are not compositions because panels do not necessarily need to provide functionality.)
+                components - collection of controls and elements
+                controls - input
+            </li>
+            <li>shouldn't everything not use ids? aren't you only supposed to use ids once per document?</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer class="full-width">
+      <div class="centered-single-column">
+        <div class="credit">
+          <ul>
+            <li><a target="_blank" href="https://uchu.style">uchu.css colors</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
